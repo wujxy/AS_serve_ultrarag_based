@@ -1,0 +1,102 @@
+[INFO] Starting vLLM service...
+  Model: /home/NagaiYoru/LLM_model/Llama-3.2-3B-Instruct
+  Host: 127.0.0.1
+  Port: 65504
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:27 [utils.py:325] 
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:27 [utils.py:325]        █     █     █▄   ▄█
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:27 [utils.py:325]  ▄▄ ▄█ █     █     █ ▀▄▀ █  version 0.15.0
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:27 [utils.py:325]   █▄█▀ █     █     █     █  model   /home/NagaiYoru/LLM_model/Llama-3.2-3B-Instruct
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:27 [utils.py:325]    ▀▀  ▀▀▀▀▀ ▀▀▀▀▀ ▀     ▀
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:27 [utils.py:325] 
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:27 [utils.py:261] non-default args: {'host': '127.0.0.1', 'port': 65504, 'model': '/home/NagaiYoru/LLM_model/Llama-3.2-3B-Instruct', 'trust_remote_code': True, 'max_model_len': 8192, 'enforce_eager': True, 'served_model_name': ['llama3-3b-instruct'], 'gpu_memory_utilization': 0.7}
+[0;36m(APIServer pid=281036)[0;0m The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+[0;36m(APIServer pid=281036)[0;0m The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:27 [model.py:541] Resolved architecture: LlamaForCausalLM
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:27 [model.py:1561] Using max model len 8192
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:27 [scheduler.py:226] Chunked prefill is enabled with max_num_batched_tokens=2048.
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:27 [vllm.py:624] Asynchronous scheduling is enabled.
+[0;36m(APIServer pid=281036)[0;0m WARNING 02-07 16:07:27 [vllm.py:662] Enforce eager set, overriding optimization level to -O0
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:27 [vllm.py:762] Cudagraph is disabled under eager mode
+[0;36m(APIServer pid=281036)[0;0m WARNING 02-07 16:07:28 [interface.py:470] Using 'pin_memory=False' as WSL is detected. This may slow down the performance.
+[0;36m(EngineCore_DP0 pid=281225)[0;0m INFO 02-07 16:07:34 [core.py:96] Initializing a V1 LLM engine (v0.15.0) with config: model='/home/NagaiYoru/LLM_model/Llama-3.2-3B-Instruct', speculative_config=None, tokenizer='/home/NagaiYoru/LLM_model/Llama-3.2-3B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False), seed=0, served_model_name=llama3-3b-instruct, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'level': None, 'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'splitting_ops': [], 'compile_mm_encoder': False, 'compile_sizes': [], 'compile_ranges_split_points': [2048], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'eliminate_noops': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': True}, 'local_cache_dir': None}
+[0;36m(EngineCore_DP0 pid=281225)[0;0m INFO 02-07 16:07:34 [network_utils.py:187] Port 65504 is already in use, trying port 65505
+[0;36m(EngineCore_DP0 pid=281225)[0;0m INFO 02-07 16:07:34 [parallel_state.py:1212] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://172.31.176.61:65505 backend=nccl
+[0;36m(EngineCore_DP0 pid=281225)[0;0m INFO 02-07 16:07:34 [parallel_state.py:1423] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank N/A
+[0;36m(EngineCore_DP0 pid=281225)[0;0m WARNING 02-07 16:07:34 [interface.py:470] Using 'pin_memory=False' as WSL is detected. This may slow down the performance.
+[0;36m(EngineCore_DP0 pid=281225)[0;0m INFO 02-07 16:07:34 [gpu_model_runner.py:4021] Starting to load model /home/NagaiYoru/LLM_model/Llama-3.2-3B-Instruct...
+[0;36m(EngineCore_DP0 pid=281225)[0;0m INFO 02-07 16:07:35 [cuda.py:364] Using FLASH_ATTN attention backend out of potential backends: ('FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION')
+[0;36m(EngineCore_DP0 pid=281225)[0;0m Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+[0;36m(EngineCore_DP0 pid=281225)[0;0m Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:01<00:01,  1.03s/it]
+[0;36m(EngineCore_DP0 pid=281225)[0;0m Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:10<00:00,  6.03s/it]
+[0;36m(EngineCore_DP0 pid=281225)[0;0m Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:10<00:00,  5.28s/it]
+[0;36m(EngineCore_DP0 pid=281225)[0;0m 
+[0;36m(EngineCore_DP0 pid=281225)[0;0m INFO 02-07 16:07:46 [default_loader.py:291] Loading weights took 10.63 seconds
+[0;36m(EngineCore_DP0 pid=281225)[0;0m INFO 02-07 16:07:46 [gpu_model_runner.py:4118] Model loading took 6.02 GiB memory and 11.424793 seconds
+[0;36m(EngineCore_DP0 pid=281225)[0;0m INFO 02-07 16:07:49 [gpu_worker.py:356] Available KV cache memory: 1.17 GiB
+[0;36m(EngineCore_DP0 pid=281225)[0;0m INFO 02-07 16:07:49 [kv_cache_utils.py:1307] GPU KV cache size: 10,896 tokens
+[0;36m(EngineCore_DP0 pid=281225)[0;0m INFO 02-07 16:07:49 [kv_cache_utils.py:1312] Maximum concurrency for 8,192 tokens per request: 1.33x
+[0;36m(EngineCore_DP0 pid=281225)[0;0m INFO 02-07 16:07:49 [core.py:272] init engine (profile, create kv cache, warmup model) took 2.92 seconds
+[0;36m(EngineCore_DP0 pid=281225)[0;0m INFO 02-07 16:07:50 [vllm.py:624] Asynchronous scheduling is enabled.
+[0;36m(EngineCore_DP0 pid=281225)[0;0m WARNING 02-07 16:07:50 [vllm.py:669] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+[0;36m(EngineCore_DP0 pid=281225)[0;0m INFO 02-07 16:07:50 [vllm.py:762] Cudagraph is disabled under eager mode
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [api_server.py:665] Supported tasks: ['generate']
+[0;36m(APIServer pid=281036)[0;0m WARNING 02-07 16:07:51 [model.py:1371] Default vLLM sampling parameters have been overridden by the model's `generation_config.json`: `{'temperature': 0.6, 'top_p': 0.9}`. If this is not intended, please relaunch vLLM instance with `--generation-config vllm`.
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [serving.py:177] Warming up chat template processing...
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [hf.py:310] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [serving.py:212] Chat template warmup completed in 257.1ms
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [api_server.py:946] Starting vLLM API server 0 on http://127.0.0.1:65504
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:38] Available routes are:
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /openapi.json, Methods: HEAD, GET
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /docs, Methods: HEAD, GET
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /docs/oauth2-redirect, Methods: HEAD, GET
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /redoc, Methods: HEAD, GET
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /scale_elastic_ep, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /is_scaling_elastic_ep, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /tokenize, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /detokenize, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /inference/v1/generate, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /pause, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /resume, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /is_paused, Methods: GET
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /metrics, Methods: GET
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /health, Methods: GET
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /v1/chat/completions, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /v1/chat/completions/render, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /v1/responses, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /v1/responses/{response_id}, Methods: GET
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /v1/responses/{response_id}/cancel, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /v1/audio/transcriptions, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /v1/audio/translations, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /v1/completions, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /v1/completions/render, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /v1/messages, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /v1/models, Methods: GET
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /load, Methods: GET
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /version, Methods: GET
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /ping, Methods: GET
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /ping, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /invocations, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /classify, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /v1/embeddings, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /score, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /v1/score, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /rerank, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /v1/rerank, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /v2/rerank, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:07:51 [launcher.py:46] Route: /pooling, Methods: POST
+[0;36m(APIServer pid=281036)[0;0m INFO:     Started server process [281036]
+[0;36m(APIServer pid=281036)[0;0m INFO:     Waiting for application startup.
+[0;36m(APIServer pid=281036)[0;0m INFO:     Application startup complete.
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:09:45 [loggers.py:257] Engine 000: Avg prompt throughput: 9.9 tokens/s, Avg generation throughput: 1.9 tokens/s, Running: 1 reqs, Waiting: 0 reqs, GPU KV cache usage: 1.2%, Prefix cache hit rate: 0.0%
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:09:55 [loggers.py:257] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 6.0 tokens/s, Running: 1 reqs, Waiting: 0 reqs, GPU KV cache usage: 1.8%, Prefix cache hit rate: 0.0%
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:10:05 [loggers.py:257] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 11.0 tokens/s, Running: 1 reqs, Waiting: 0 reqs, GPU KV cache usage: 2.6%, Prefix cache hit rate: 0.0%
+[0;36m(APIServer pid=281036)[0;0m INFO:     127.0.0.1:36052 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:10:13 [loggers.py:257] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 7.1 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 0.0%
+[0;36m(APIServer pid=281036)[0;0m WARNING 02-07 16:10:18 [launcher.py:104] port 65504 is used by process psutil.Process(pid=67543, name='python', status='sleeping') launched with command:
+[0;36m(APIServer pid=281036)[0;0m WARNING 02-07 16:10:18 [launcher.py:104] python -m vllm.entrypoints.openai.api_server --served-model-name llama3-3b-instruct --model /home/NagaiYoru/LLM_model/Llama-3.2-3B-Instruct --trust-remote-code --host 127.0.0.1 --port 65504 --max-model-len 8192 --gpu-memory-utilization 0.7 --tensor-parallel-size 1 --enforce-eager
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:10:18 [launcher.py:110] Shutting down FastAPI HTTP server.
+[rank0]:[W207 16:10:20.396461829 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[0;36m(APIServer pid=281036)[0;0m INFO:     Shutting down
+[0;36m(APIServer pid=281036)[0;0m INFO 02-07 16:10:23 [loggers.py:257] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 0.0%
+[0;36m(APIServer pid=281036)[0;0m INFO:     Waiting for application shutdown.
+[0;36m(APIServer pid=281036)[0;0m INFO:     Application shutdown complete.

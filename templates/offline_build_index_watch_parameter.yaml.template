@@ -1,0 +1,78 @@
+# offline_build_index_watch_parameter.yaml.template
+# Template for index watch service parameters
+# The script will replace placeholders with actual values at runtime
+
+corpus:
+  parse_file_path: __RAW_PDF_DIR__
+  text_corpus_save_path: __CORPUS_OUTPUT_PATH__
+  raw_chunk_path: __CORPUS_OUTPUT_PATH__
+  chunk_backend_configs:
+    token:
+      chunk_overlap: 50
+    sentence:
+      chunk_overlap: 50
+      min_sentences_per_chunk: 1
+      delim: '[''.'', ''!'', ''?'', ''；'', ''。'', ''！'', ''？'', ''\n'']'
+    recursive:
+      min_characters_per_chunk: 12
+  chunk_backend: sentence
+  tokenizer_or_token_counter: character
+  chunk_size: 512
+  chunk_path: __CHUNKS_OUTPUT_PATH__
+  use_title: false
+
+retriever:
+  model_name_or_path: __EMBEDDING_MODEL_PATH__
+  backend_configs:
+    infinity:
+      bettertransformer: false
+      pooling_method: auto
+      model_warmup: false
+      trust_remote_code: true
+    sentence_transformers:
+      trust_remote_code: true
+      sentence_transformers_encode:
+        normalize_embeddings: false
+        encode_chunk_size: 256
+        q_prompt_name: query
+        psg_prompt_name: document
+        psg_task: null
+        q_task: null
+    openai:
+      model_name: qwen3-embedding-0.6b
+      base_url: http://0.0.0.0:65503/v1
+      api_key: abc
+    bm25:
+      lang: ch
+      save_path: test_index/bm25
+  batch_size: 16
+  corpus_path: __CHUNKS_OUTPUT_PATH__
+  gpu_ids: "0"
+  is_multimodal: false
+  backend: sentence_transformers
+  index_backend: faiss
+  index_backend_configs:
+    faiss:
+      index_use_gpu: __INDEX_USE_GPU__
+      index_chunk_size: 10000
+      index_path: __INDEX_OUTPUT_PATH__
+    milvus:
+      uri: __MILVUS_URI__
+      token: null
+      id_field_name: id
+      vector_field_name: vector
+      text_field_name: contents
+      id_max_length: 64
+      text_max_length: 60000
+      metric_type: IP
+      index_params:
+        index_type: AUTOINDEX
+        metric_type: IP
+      search_params:
+        metric_type: IP
+        params: {}
+      index_chunk_size: 1000
+  is_demo: false
+  collection_name: __COLLECTION_NAME__
+  embedding_path: __EMBEDDING_OUTPUT_PATH__
+  overwrite: true

@@ -1,0 +1,4 @@
+[02/07/26 15:49:50] INFO [UltraRAG.Client] Executing pipeline with configuration /home/NagaiYoru/LLM_tuning/UltraRAG/pipelines/online_rag_qa_batch.yaml
+[02/07/26 15:49:50] INFO [UltraRAG.Client] Initializing MCP Client...
+[02/07/26 15:49:50] INFO [UltraRAG.Client] Available tools: []
+[02/07/26 15:49:50] INFO [UltraRAG.Client] Executing step: benchmark.get_data

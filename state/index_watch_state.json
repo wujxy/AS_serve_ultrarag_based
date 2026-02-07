@@ -1,0 +1,23 @@
+{
+  "files": {
+    "/home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service/data/raw_docs/实用量子场论简明教程_乔从丰.pdf": {
+      "path": "/home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service/data/raw_docs/实用量子场论简明教程_乔从丰.pdf",
+      "size": 15010410,
+      "mtime": 1770403174.4263468,
+      "checksum": null
+    },
+    "/home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service/data/raw_docs/基于对称性的现代物理学.pdf": {
+      "path": "/home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service/data/raw_docs/基于对称性的现代物理学.pdf",
+      "size": 2946613,
+      "mtime": 1770403174.4103467,
+      "checksum": null
+    },
+    "/home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service/data/raw_docs/Quantum Field Theory David Tong.pdf": {
+      "path": "/home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service/data/raw_docs/Quantum Field Theory David Tong.pdf",
+      "size": 1334860,
+      "mtime": 1770403174.4063468,
+      "checksum": null
+    }
+  },
+  "last_updated": "2026-02-07T02:46:17.829058"
+}

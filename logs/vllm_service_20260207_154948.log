@@ -1,0 +1,4 @@
+[INFO] Starting vLLM service...
+  Model: /home/NagaiYoru/LLM_model/Llama-3.2-3B-Instruct
+  Host: 127.0.0.1
+  Port: 65504

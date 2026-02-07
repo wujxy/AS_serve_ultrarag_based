@@ -1,0 +1,3 @@
+{"id": 0, "question": "什么是 UltraRAG？", "answer": "UltraRAG是一种高效的单链抗体技术"}
+{"id": 1, "question": "UltraRAG 支持哪些功能？", "answer": "以下功能："}
+{"id": 2, "question": "如何使用 UltraRAG 构建知识库？", "answer": "rag = UltraRAG(); rag.define_graph(); rag.add_node(\"node1\"); rag.add_edge(\"edge1\"); rag.train(); rag.save_model(); rag.load_model"}

@@ -1,0 +1,234 @@
+2026-02-07 02:38:50,258 [INFO] Service root: /home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service
+2026-02-07 02:38:50,259 [INFO] UltraRAG root: /home/NagaiYoru/LLM_tuning/UltraRAG
+2026-02-07 02:38:50,259 [INFO] Work directory: /home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service
+2026-02-07 02:38:50,259 [INFO] Output directory: /home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service/output/kb_index
+2026-02-07 02:38:50,259 [INFO]   Chunks: /home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service/output/kb_index/chunks.jsonl
+2026-02-07 02:38:50,259 [INFO]   Index: /home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service/output/kb_index/index.index
+2026-02-07 02:38:50,259 [INFO] Index Watch Service started
+2026-02-07 02:38:50,259 [INFO] Monitoring directory: /home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service/data/raw_docs
+2026-02-07 02:38:50,259 [INFO] Scan interval: 60 seconds
+2026-02-07 02:38:50,260 [INFO] Scanning for new PDF files...
+2026-02-07 02:38:50,260 [INFO] Next scan in 60 seconds...
+2026-02-07 02:39:50,260 [INFO] Scanning for new PDF files...
+2026-02-07 02:39:50,261 [INFO] Found 3 new/modified files:
+2026-02-07 02:39:50,261 [INFO]   - /home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service/data/raw_docs/实用量子场论简明教程_乔从丰.pdf
+2026-02-07 02:39:50,261 [INFO]   - /home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service/data/raw_docs/基于对称性的现代物理学.pdf
+2026-02-07 02:39:50,261 [INFO]   - /home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service/data/raw_docs/Quantum Field Theory David Tong.pdf
+2026-02-07 02:39:50,272 [INFO] Created runtime parameter: /home/NagaiYoru/LLM_tuning/UltraRAG/parameter/_runtime/offline_build_index_watch_parameter.yaml
+2026-02-07 02:39:50,273 [INFO] Copied parameter file to: /home/NagaiYoru/LLM_tuning/UltraRAG/pipelines/parameter/offline_build_index_watch_parameter.yaml
+2026-02-07 02:39:50,273 [INFO] Running UltraRAG pipeline: /home/NagaiYoru/LLM_tuning/UltraRAG/pipelines/offline_build_index_watch.yaml
+2026-02-07 02:39:50,273 [INFO] Running: ultrarag run ...
+2026-02-07 02:46:17,828 [WARNING] ultrarag run stderr:
+
+╭─  UltraRAG v0.3.0  ──────────────────────────────────────────────────────────────╮
+│                                                                                  │
+│   ███   ███ ███    █████████ ████████    █████   ████████    █████    ███████    │
+│   ███   ███ ███       ███    ███   ███  ███ ███  ███   ███  ███ ███  ███   ███   │
+│   ███   ███ ███       ███    ███   ███ ███   ███ ███   ███ ███   ███ ███         │
+│   ███   ███ ███       ███    ████████  █████████ ████████  █████████ ███  ████   │
+│   ███   ███ ███       ███    ███  ███  ███   ███ ███  ███  ███   ███ ███   ███   │
+│   ███   ███ ███       ███    ███   ███ ███   ███ ███   ███ ███   ███ ███   ███   │
+│    ███████  █████████ ███    ███   ███ ███   ███ ███   ███ ███   ███  ███████    │
+│                                                                                  │
+│                                                                                  │
+│       ▶  Pipeline        offline_build_index_watch                               │
+│                                                                                  │
+│       ◆  UltraRAG        v0.3.0                                                  │
+│       ◇  FastMCP         v2.14.3                                                 │
+│       ◇  MCP             v1.25.0                                                 │
+│                                                                                  │
+│       ➢  Docs            https://ultrarag.openbmb.cn/                            │
+│                                                                                  │
+│       ❖  Python          3.12.12                                                 │
+│       ▤  System          Linux x86_64                                            │
+│                                                                                  │
+╰─────────────────────────────────────────────────────────  Press Ctrl+C to exit  ─╯
+
+[02/07/26 02:39:51] INFO     [UltraRAG.Client] Executing pipeline with configuration                         client.py:1109
+                             /home/NagaiYoru/LLM_tuning/UltraRAG/pipelines/offline_build_index_watch.yaml                  
+[02/07/26 02:39:51] INFO     [UltraRAG.Client] Initializing MCP Client...                                    client.py:1209
+[02/07/26 02:39:53] INFO     Starting MCP server 'corpus' with    server.py:2507
+                             transport 'stdio'                                  
+[02/07/26 02:39:54] INFO     Starting MCP server 'retriever' with server.py:2507
+                             transport 'stdio'                                  
+[02/07/26 02:39:54] INFO     [UltraRAG.Client] Available tools: ['corpus_build_text_corpus',                 client.py:1793
+                             'corpus_build_image_corpus', 'corpus_mineru_parse',                                           
+                             'corpus_build_mineru_corpus', 'corpus_chunk_documents',                                       
+                             'retriever_retriever_init', 'retriever_retriever_embed',                                      
+                             'retriever_retriever_index', 'retriever_retriever_search',                                    
+                             'retriever_retriever_batch_search', 'retriever_bm25_index',                                   
+                             'retriever_bm25_search', 'retriever_retriever_deploy_search',                                 
+                             'retriever_retriever_websearch', 'retriever_retriever_batch_websearch']                       
+[02/07/26 02:39:54] INFO     [UltraRAG.Client] Executing step: corpus.build_text_corpus                      client.py:1359
+
+Building text corpus:   0%|          | 0/3 [00:00<?, ?file/s]
+Building text corpus:  33%|███▎      | 1/3 [00:00<00:00,  3.71file/s]
+Building text corpus:  67%|██████▋   | 2/3 [00:00<00:00,  3.68file/s]
+Building text corpus: 100%|██████████| 3/3 [00:01<00:00,  2.10file/s]
+Building text corpus: 100%|██████████| 3/3 [00:01<00:00,  2.38file/s]
+[02/07/26 02:39:55] INFO     [UltraRAG.corpus] Built text corpus:  corpus.py:328
+                             /home/NagaiYoru/LLM_tuning/UltraRAG/u              
+                             ltrarag_service/output/kb_index/.inte              
+                             rmediate/corpus.jsonl (rows=3,                     
+                             from=dir:                                          
+                             /home/NagaiYoru/LLM_tuning/UltraRAG/u              
+                             ltrarag_service/data/raw_docs)                     
+[02/07/26 02:39:55] INFO     [UltraRAG.Client] Executing step: corpus.chunk_documents                        client.py:1359
+[02/07/26 02:39:56] INFO     [UltraRAG.corpus] Chunking Config:    corpus.py:793
+                             backend=sentence, size=512,                        
+                             overlap=50, tokenizer=character                    
+
+Chunking (sentence):   0%|          | 0/3 [00:00<?, ?doc/s]
+Chunking (sentence): 100%|██████████| 3/3 [00:00<00:00, 59.47doc/s]
+[02/07/26 02:39:56] INFO     [UltraRAG.Client] Executing step: retriever.retriever_init                      client.py:1359
+[02/07/26 02:39:56] INFO     [UltraRAG.retriever] [retriever]   retriever.py:156
+                             Set CUDA_VISIBLE_DEVICES=0,                        
+                             device_num=1                                       
+[02/07/26 02:40:05] INFO     [UltraRAG.retriever] [retriever]   retriever.py:280
+                             Loading corpus to memory for                       
+                             faiss/BM25...                                      
+
+Loading corpus:   0%|                                                   | 0.00/1.16M [00:00<?, ?B/s]
+Loading corpus: 100%|███████████████████████████████████████████| 1.16M/1.16M [00:00<00:00, 166MB/s]
+Loading corpus: 100%|███████████████████████████████████████████| 1.16M/1.16M [00:00<00:00, 161MB/s]
+[02/07/26 02:40:05] INFO     [UltraRAG.retriever] [index]       retriever.py:346
+                             Initialized backend 'faiss'.                       
+[02/07/26 02:40:05] INFO     [UltraRAG.retriever] [faiss]    faiss_backend.py:92
+                             Index path                                         
+                             '/home/NagaiYoru/LLM_tuning/Ult                    
+                             raRAG/ultrarag_service/output/k                    
+                             b_index/index.index' does not                      
+                             exist. Retriever initialized                       
+                             without index.                                     
+[02/07/26 02:40:05] INFO     [UltraRAG.Client] Executing step: retriever.retriever_embed                     client.py:1359
+
+Batches:   0%|          | 0/81 [00:00<?, ?it/s]
+Batches:   1%|          | 1/81 [00:00<01:08,  1.17it/s]
+Batches:   2%|▏         | 2/81 [00:01<00:52,  1.49it/s]
+Batches:   4%|▎         | 3/81 [00:01<00:49,  1.58it/s]
+Batches:   5%|▍         | 4/81 [00:02<00:46,  1.67it/s]
+Batches:   6%|▌         | 5/81 [00:03<00:45,  1.67it/s]
+Batches:   7%|▋         | 6/81 [00:03<00:46,  1.62it/s]
+Batches:   9%|▊         | 7/81 [00:06<01:31,  1.24s/it]
+Batches:  10%|▉         | 8/81 [00:07<01:22,  1.13s/it]
+Batches:  11%|█         | 9/81 [00:16<04:17,  3.58s/it]
+Batches:  12%|█▏        | 10/81 [00:22<05:06,  4.32s/it]
+Batches:  14%|█▎        | 11/81 [00:25<04:40,  4.00s/it]
+Batches:  15%|█▍        | 12/81 [00:42<09:10,  7.97s/it]
+Batches:  16%|█▌        | 13/81 [00:45<07:17,  6.44s/it]
+Batches:  17%|█▋        | 14/81 [00:47<05:44,  5.14s/it]
+Batches:  19%|█▊        | 15/81 [00:59<07:54,  7.19s/it]
+Batches:  20%|█▉        | 16/81 [01:05<07:18,  6.74s/it]
+Batches:  21%|██        | 17/81 [01:14<07:52,  7.38s/it]
+Batches:  22%|██▏       | 18/81 [01:16<06:10,  5.88s/it]
+Batches:  23%|██▎       | 19/81 [01:18<04:55,  4.77s/it]
+Batches:  25%|██▍       | 20/81 [01:24<05:11,  5.11s/it]
+Batches:  26%|██▌       | 21/81 [01:33<06:11,  6.18s/it]
+Batches:  27%|██▋       | 22/81 [01:36<05:09,  5.24s/it]
+Batches:  28%|██▊       | 23/81 [01:37<03:52,  4.01s/it]
+Batches:  30%|██▉       | 24/81 [01:44<04:37,  4.87s/it]
+Batches:  31%|███       | 25/81 [01:48<04:14,  4.55s/it]
+Batches:  32%|███▏      | 26/81 [01:51<03:47,  4.13s/it]
+Batches:  33%|███▎      | 27/81 [02:04<06:10,  6.86s/it]
+Batches:  35%|███▍      | 28/81 [02:15<07:12,  8.16s/it]
+Batches:  36%|███▌      | 29/81 [02:32<09:19, 10.76s/it]
+Batches:  37%|███▋      | 30/81 [02:38<07:52,  9.27s/it]
+Batches:  38%|███▊      | 31/81 [02:40<05:57,  7.15s/it]
+Batches:  40%|███▉      | 32/81 [02:42<04:33,  5.57s/it]
+Batches:  41%|████      | 33/81 [02:51<05:19,  6.65s/it]
+Batches:  42%|████▏     | 34/81 [02:59<05:24,  6.91s/it]
+Batches:  43%|████▎     | 35/81 [03:02<04:29,  5.87s/it]
+Batches:  44%|████▍     | 36/81 [03:25<08:13, 10.97s/it]
+Batches:  46%|████▌     | 37/81 [03:31<06:53,  9.40s/it]
+Batches:  47%|████▋     | 38/81 [03:31<04:51,  6.78s/it]
+Batches:  48%|████▊     | 39/81 [03:35<04:08,  5.92s/it]
+Batches:  49%|████▉     | 40/81 [03:38<03:25,  5.02s/it]
+Batches:  51%|█████     | 41/81 [03:51<04:50,  7.27s/it]
+Batches:  52%|█████▏    | 42/81 [03:51<03:24,  5.23s/it]
+Batches:  53%|█████▎    | 43/81 [04:05<04:53,  7.72s/it]
+Batches:  54%|█████▍    | 44/81 [04:06<03:35,  5.82s/it]
+Batches:  56%|█████▌    | 45/81 [04:11<03:18,  5.50s/it]
+Batches:  57%|█████▋    | 46/81 [04:13<02:35,  4.45s/it]
+Batches:  58%|█████▊    | 47/81 [04:17<02:30,  4.42s/it]
+Batches:  59%|█████▉    | 48/81 [04:24<02:52,  5.22s/it]
+Batches:  60%|██████    | 49/81 [04:26<02:14,  4.21s/it]
+Batches:  62%|██████▏   | 50/81 [04:28<01:50,  3.57s/it]
+Batches:  63%|██████▎   | 51/81 [04:30<01:30,  3.00s/it]
+Batches:  64%|██████▍   | 52/81 [04:33<01:25,  2.95s/it]
+Batches:  65%|██████▌   | 53/81 [04:35<01:13,  2.64s/it]
+Batches:  67%|██████▋   | 54/81 [04:37<01:09,  2.57s/it]
+Batches:  68%|██████▊   | 55/81 [04:41<01:16,  2.93s/it]
+Batches:  69%|██████▉   | 56/81 [04:41<00:56,  2.28s/it]
+Batches:  70%|███████   | 57/81 [04:49<01:32,  3.85s/it]
+Batches:  72%|███████▏  | 58/81 [04:53<01:26,  3.78s/it]
+Batches:  73%|███████▎  | 59/81 [04:58<01:34,  4.31s/it]
+Batches:  74%|███████▍  | 60/81 [05:04<01:38,  4.68s/it]
+Batches:  75%|███████▌  | 61/81 [05:07<01:27,  4.38s/it]
+Batches:  77%|███████▋  | 62/81 [05:11<01:21,  4.30s/it]
+Batches:  78%|███████▊  | 63/81 [05:14<01:07,  3.73s/it]
+Batches:  79%|███████▉  | 64/81 [05:17<00:59,  3.50s/it]
+Batches:  80%|████████  | 65/81 [05:22<01:04,  4.04s/it]
+Batches:  81%|████████▏ | 66/81 [05:30<01:17,  5.16s/it]
+Batches:  83%|████████▎ | 67/81 [05:36<01:15,  5.41s/it]
+Batches:  84%|████████▍ | 68/81 [05:37<00:53,  4.08s/it]
+Batches:  85%|████████▌ | 69/81 [05:40<00:44,  3.67s/it]
+Batches:  86%|████████▋ | 70/81 [05:40<00:29,  2.69s/it]
+Batches:  88%|████████▊ | 71/81 [05:45<00:32,  3.24s/it]
+Batches:  89%|████████▉ | 72/81 [05:49<00:31,  3.51s/it]
+Batches:  90%|█████████ | 73/81 [05:49<00:20,  2.57s/it]
+Batches:  91%|█████████▏| 74/81 [05:52<00:19,  2.82s/it]
+Batches:  93%|█████████▎| 75/81 [05:56<00:18,  3.14s/it]
+Batches:  94%|█████████▍| 76/81 [06:01<00:17,  3.47s/it]
+Batches:  95%|█████████▌| 77/81 [06:01<00:10,  2.55s/it]
+Batches:  96%|█████████▋| 78/81 [06:05<00:09,  3.05s/it]
+Batches:  98%|█████████▊| 79/81 [06:07<00:05,  2.82s/it]
+Batches:  99%|█████████▉| 80/81 [06:10<00:02,  2.84s/it]
+Batches: 100%|██████████| 81/81 [06:11<00:00,  2.05s/it]
+Batches: 100%|██████████| 81/81 [06:11<00:00,  4.58s/it]
+[02/07/26 02:46:16] INFO     [UltraRAG.retriever] embedding     retriever.py:562
+                             success                                            
+[02/07/26 02:46:16] INFO     [UltraRAG.Client] Executing step: retriever.retriever_index                     client.py:1359
+[02/07/26 02:46:16] INFO     [UltraRAG.retriever] Start     faiss_backend.py:154
+                             building FAISS index, total                        
+                             vectors: 1286                                      
+
+[faiss] Indexing:   0%|          | 0/1286 [00:00<?, ?vec/s]
+[faiss] Indexing: 100%|██████████| 1286/1286 [00:00<00:00, 579550.33vec/s]
+[02/07/26 02:46:16] INFO     [UltraRAG.retriever] [faiss]   faiss_backend.py:170
+                             Index written to                                   
+                             '/home/NagaiYoru/LLM_tuning/Ul                     
+                             traRAG/ultrarag_service/output                     
+                             /kb_index/index.index'.                            
+[02/07/26 02:46:17] INFO     [UltraRAG.retriever] [faiss]    faiss_backend.py:74
+                             Loaded index to GPU(s) with 1                      
+                             device(s).                                         
+[02/07/26 02:46:17] INFO     [UltraRAG.retriever] [faiss]       retriever.py:758
+                             Indexing success.                                  
+[02/07/26 02:46:17] INFO     [UltraRAG.Client] Pipeline execution completed.                                 client.py:1800
+[02/07/26 02:46:17] INFO     [UltraRAG.Client] Memory output saved to                                         client.py:845
+                             output/memory_nq_offline_build_index_watch_20260207_024617.json                               
+
+2026-02-07 02:46:17,828 [INFO] UltraRAG pipeline completed successfully
+2026-02-07 02:46:17,829 [INFO] State updated. Index build completed successfully.
+2026-02-07 02:46:17,829 [INFO] Next scan in 60 seconds...
+2026-02-07 02:46:46,425 [INFO] Interrupted by user. Shutting down...
+2026-02-07 16:07:12,786 [INFO] Service root: /home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service
+2026-02-07 16:07:12,787 [INFO] UltraRAG root: /home/NagaiYoru/LLM_tuning/UltraRAG
+2026-02-07 16:07:12,787 [INFO] Work directory: /home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service
+2026-02-07 16:07:12,787 [INFO] Output directory: /home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service/output/kb_index
+2026-02-07 16:07:12,787 [INFO]   Chunks: /home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service/output/kb_index/chunks.jsonl
+2026-02-07 16:07:12,787 [INFO]   Index: /home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service/output/kb_index/index.index
+2026-02-07 16:07:12,787 [INFO] Index Watch Service started
+2026-02-07 16:07:12,787 [INFO] Monitoring directory: /home/NagaiYoru/LLM_tuning/UltraRAG/ultrarag_service/data/raw_docs
+2026-02-07 16:07:12,787 [INFO] Scan interval: 60 seconds
+2026-02-07 16:07:12,787 [INFO] Scanning for new PDF files...
+2026-02-07 16:07:12,788 [INFO] Next scan in 60 seconds...
+2026-02-07 16:08:09,406 [INFO] Scanning for new PDF files...
+2026-02-07 16:08:09,675 [INFO] Next scan in 60 seconds...
+2026-02-07 16:09:07,929 [INFO] Scanning for new PDF files...
+2026-02-07 16:09:07,932 [INFO] Next scan in 60 seconds...
+2026-02-07 16:10:04,095 [INFO] Scanning for new PDF files...
+2026-02-07 16:10:04,103 [INFO] Next scan in 60 seconds...
+2026-02-07 16:11:00,221 [INFO] Scanning for new PDF files...
+2026-02-07 16:11:00,223 [INFO] Next scan in 60 seconds...
+2026-02-07 16:11:03,565 [INFO] Interrupted by user. Shutting down...

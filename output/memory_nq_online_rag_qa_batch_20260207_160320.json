@@ -1,0 +1,111 @@
+[
+  {
+    "step": "benchmark.get_data",
+    "memory": {
+      "memory_gt_ls": [],
+      "memory_q_ls": [
+        "什么是 UltraRAG？",
+        "UltraRAG 支持哪些功能？",
+        "如何使用 UltraRAG 构建知识库？"
+      ]
+    }
+  },
+  {
+    "step": "retriever.retriever_init",
+    "memory": {}
+  },
+  {
+    "step": "retriever.retriever_search",
+    "memory": {
+      "memory_ret_psg": [
+        [
+          "Physically one could argue that any real plate cannot reﬂect waves of arbitrarily high frequency: at some point, things begin to leak. Mathematically, we want to ﬁnd a way to neglect modes of momentum p ≫a−1 for some distance scale a ≪d, known as the ultra-violet (UV) cut-oﬀ. One way to do this is to change the integral (2.33) to, Z dpydpz\n\n∞ X r\u0010nπ\n\n!\n\nE(d) (2π)2 1 2\n\n\u00112 + p2 y + p2 z e−a q d ) 2+p2y+p2z (2.",
+          "这两坨奇怪的东西看上去真该加在一起：拉格朗日量中的一个额 外项Aµ ¯ΨγµΨ 会变换作 Aµ ¯ΨγµΨ →(Aµ+∂µa(x))¯ΨγµΨ = Aµ ¯ΨγµΨ+∂µa(x)¯ΨγµΨ (7.14) 比较(7.12) 式中的第二项5。拉格朗日量中这个将Ψ、¯Ψ 和Aµ 耦 合在一起的新项，正好能干掉那个不自量力阻挡自旋1 2 自由场拥 有局域U(1) 不变性的家伙。换言之：通过添加这个新项使得拉格 朗日量局域U(1) 不变。\n\n再来仔细研究一下这件事。首先习惯上都会在局域U(1) 变换 的指数上添一个常数因子g：eiga(x)。这样额外项变成\n\n−(∂µa(x))¯ΨγµΨ →−g(∂µa(x))¯ΨγµΨ。 (7.15) 正如我们下面将看到的，这个额外的因子g 代表一个任意的耦合 常数13g。将这个新项 13 耦合常数总能告诉我们相互 作用的强度是多少。这里讨论的 是电磁相互作用，g 代表着它的 强度。",
+          "技术上讲：我 们需要一个局域SU(2) 对称的 拉格朗日量来得到一个可重整的 理论。感兴趣的读者可以参阅本 节末给出的参考书目。\n\n量同样的办法，我们能对零自旋场的二重态30写出一个局域SU(2) 不变的拉格朗日量 LSU(2) 且U(1) 2gBµ)Φ† \u0013\u0012 (∂µ + ig′σi(W µ)i + i1 2gBµ)Φ \u0013\n\n= \u0012 (∂µ −ig′σi(Wµ)i −i1\n\n+ ρ2Φ†Φ −λ(Φ†Φ)2 | {z } ≡−V (Φ) (7.66) 图7.1: Higgs 势取不同 参数ρ 值的图像，ρ 被 其中Φ := \u0012ϕ1 ϕ2\n\n\u0013 ，对称变换为（(7.55)式） 认为是由于宇宙暴涨所 造成的宇宙冷却而改变。\n\nFigure adapted from (Wµ)i →(W ′ µ)i = (W ′ µ)i + ∂µbi(x) + ϵijkbj(x)(Wµ)k (7.67) “Spontaneous symmetry breaking” by FT2 和 (Wikimedia Commons) released under a CC",
+          "58) 17译注：原文下式多一乘号，已更正 124 Chapter 7. 相互作用理论 7.3 Mass Terms and Unification of U(1) and SU(2) 质量项、 U(1) 和SU(2) 的统一 在上一章中，为了防止SU(2) 对称性被破坏，我们不能往拉 格朗日量中添加形如m1 ¯ΨΨ 或m2(Wµ)i(W µ)i 的质量项。而从实 验中我们知道相应的粒子26却有质量，这常被解释为SU(2) 对称 26 例如，由Ψ 描述的电子e− 和电子中微子νe，以及由(Wµ)i 描述的三个bosons 。\n\n性的破缺。这意味着对称性在高能标下存在，而在低能标下自发 破缺。 之前我们得到了一个局域U(1) 不变的拉格朗日量，在这里为 方便起见我们将相应的自旋为1 的场记做Bµ： L局域U(1) 不变= −m ¯ψψ + ¯ψγµ(i∂µ +gBµ)ψ −1 4BµνBµν (7.59) 其中 Bµν := ∂µBν −∂νBµ 由于自旋为1 的场Bµ 能保证拉格朗日量的U(1) 不变性，所以其 常被称作U(1) 规范场。",
+          "+ g(Aµ + ∂µa(x))(e−iga(x) ¯Ψ)γµ(eiga(x)Ψ)\n\n= −m¯ΨΨ + i¯Ψγµ∂µΨ −(((((((( g(∂µa(x))¯ΨγµΨ\n\n+ gAµ ¯ΨγµΨ +(((((((( g(∂µa(x))¯ΨγµΨ\n\n= −m¯ΨΨ + i¯Ψγµ∂µΨ + gAµ ¯ΨγµΨ = LDirac+ 额外项。\n\n(7.16) 由此，在加上一个额外项后，我们得到了，正如所期待的，一 个局域U(1) 不变的拉格朗日量。为了描述一个包含了包含有质量 自旋1 2 场和无质量自旋为一的场的系统，我们必须将无质量自旋 为一的自由场的拉格朗日量也加到拉格朗日量中来。这样就得到 了完整的拉格朗日量 LDirac+ 额外项+Maxwell = −m¯ΨΨ+i¯Ψγµ∂µΨ+gAµ ¯ΨγµΨ+∂µAν∂µAν−∂µAν∂νAµ。\n\n(7.17) 为了方便起见，引入记号 Dµ ≡i∂µ + gAµ， (7.18) 称作协变导数(covariant derivative)6。"
+        ],
+        [
+          "Physically one could argue that any real plate cannot reﬂect waves of arbitrarily high frequency: at some point, things begin to leak. Mathematically, we want to ﬁnd a way to neglect modes of momentum p ≫a−1 for some distance scale a ≪d, known as the ultra-violet (UV) cut-oﬀ. One way to do this is to change the integral (2.33) to, Z dpydpz\n\n∞ X r\u0010nπ\n\n!\n\nE(d) (2π)2 1 2\n\n\u00112 + p2 y + p2 z e−a q d ) 2+p2y+p2z (2.",
+          "这两坨奇怪的东西看上去真该加在一起：拉格朗日量中的一个额 外项Aµ ¯ΨγµΨ 会变换作 Aµ ¯ΨγµΨ →(Aµ+∂µa(x))¯ΨγµΨ = Aµ ¯ΨγµΨ+∂µa(x)¯ΨγµΨ (7.14) 比较(7.12) 式中的第二项5。拉格朗日量中这个将Ψ、¯Ψ 和Aµ 耦 合在一起的新项，正好能干掉那个不自量力阻挡自旋1 2 自由场拥 有局域U(1) 不变性的家伙。换言之：通过添加这个新项使得拉格 朗日量局域U(1) 不变。\n\n再来仔细研究一下这件事。首先习惯上都会在局域U(1) 变换 的指数上添一个常数因子g：eiga(x)。这样额外项变成\n\n−(∂µa(x))¯ΨγµΨ →−g(∂µa(x))¯ΨγµΨ。 (7.15) 正如我们下面将看到的，这个额外的因子g 代表一个任意的耦合 常数13g。将这个新项 13 耦合常数总能告诉我们相互 作用的强度是多少。这里讨论的 是电磁相互作用，g 代表着它的 强度。",
+          "技术上讲：我 们需要一个局域SU(2) 对称的 拉格朗日量来得到一个可重整的 理论。感兴趣的读者可以参阅本 节末给出的参考书目。\n\n量同样的办法，我们能对零自旋场的二重态30写出一个局域SU(2) 不变的拉格朗日量 LSU(2) 且U(1) 2gBµ)Φ† \u0013\u0012 (∂µ + ig′σi(W µ)i + i1 2gBµ)Φ \u0013\n\n= \u0012 (∂µ −ig′σi(Wµ)i −i1\n\n+ ρ2Φ†Φ −λ(Φ†Φ)2 | {z } ≡−V (Φ) (7.66) 图7.1: Higgs 势取不同 参数ρ 值的图像，ρ 被 其中Φ := \u0012ϕ1 ϕ2\n\n\u0013 ，对称变换为（(7.55)式） 认为是由于宇宙暴涨所 造成的宇宙冷却而改变。\n\nFigure adapted from (Wµ)i →(W ′ µ)i = (W ′ µ)i + ∂µbi(x) + ϵijkbj(x)(Wµ)k (7.67) “Spontaneous symmetry breaking” by FT2 和 (Wikimedia Commons) released under a CC",
+          "58) 17译注：原文下式多一乘号，已更正 124 Chapter 7. 相互作用理论 7.3 Mass Terms and Unification of U(1) and SU(2) 质量项、 U(1) 和SU(2) 的统一 在上一章中，为了防止SU(2) 对称性被破坏，我们不能往拉 格朗日量中添加形如m1 ¯ΨΨ 或m2(Wµ)i(W µ)i 的质量项。而从实 验中我们知道相应的粒子26却有质量，这常被解释为SU(2) 对称 26 例如，由Ψ 描述的电子e− 和电子中微子νe，以及由(Wµ)i 描述的三个bosons 。\n\n性的破缺。这意味着对称性在高能标下存在，而在低能标下自发 破缺。 之前我们得到了一个局域U(1) 不变的拉格朗日量，在这里为 方便起见我们将相应的自旋为1 的场记做Bµ： L局域U(1) 不变= −m ¯ψψ + ¯ψγµ(i∂µ +gBµ)ψ −1 4BµνBµν (7.59) 其中 Bµν := ∂µBν −∂νBµ 由于自旋为1 的场Bµ 能保证拉格朗日量的U(1) 不变性，所以其 常被称作U(1) 规范场。",
+          "+ g(Aµ + ∂µa(x))(e−iga(x) ¯Ψ)γµ(eiga(x)Ψ)\n\n= −m¯ΨΨ + i¯Ψγµ∂µΨ −(((((((( g(∂µa(x))¯ΨγµΨ\n\n+ gAµ ¯ΨγµΨ +(((((((( g(∂µa(x))¯ΨγµΨ\n\n= −m¯ΨΨ + i¯Ψγµ∂µΨ + gAµ ¯ΨγµΨ = LDirac+ 额外项。\n\n(7.16) 由此，在加上一个额外项后，我们得到了，正如所期待的，一 个局域U(1) 不变的拉格朗日量。为了描述一个包含了包含有质量 自旋1 2 场和无质量自旋为一的场的系统，我们必须将无质量自旋 为一的自由场的拉格朗日量也加到拉格朗日量中来。这样就得到 了完整的拉格朗日量 LDirac+ 额外项+Maxwell = −m¯ΨΨ+i¯Ψγµ∂µΨ+gAµ ¯ΨγµΨ+∂µAν∂µAν−∂µAν∂νAµ。\n\n(7.17) 为了方便起见，引入记号 Dµ ≡i∂µ + gAµ， (7.18) 称作协变导数(covariant derivative)6。"
+        ],
+        [
+          "技术上讲：我 们需要一个局域SU(2) 对称的 拉格朗日量来得到一个可重整的 理论。感兴趣的读者可以参阅本 节末给出的参考书目。\n\n量同样的办法，我们能对零自旋场的二重态30写出一个局域SU(2) 不变的拉格朗日量 LSU(2) 且U(1) 2gBµ)Φ† \u0013\u0012 (∂µ + ig′σi(W µ)i + i1 2gBµ)Φ \u0013\n\n= \u0012 (∂µ −ig′σi(Wµ)i −i1\n\n+ ρ2Φ†Φ −λ(Φ†Φ)2 | {z } ≡−V (Φ) (7.66) 图7.1: Higgs 势取不同 参数ρ 值的图像，ρ 被 其中Φ := \u0012ϕ1 ϕ2\n\n\u0013 ，对称变换为（(7.55)式） 认为是由于宇宙暴涨所 造成的宇宙冷却而改变。\n\nFigure adapted from (Wµ)i →(W ′ µ)i = (W ′ µ)i + ∂µbi(x) + ϵijkbj(x)(Wµ)k (7.67) “Spontaneous symmetry breaking” by FT2 和 (Wikimedia Commons) released under a CC",
+          "40)式给出\n\n\u0010 ∂µϕ†∂µϕ −m2ϕ†ϕ \u0011 。 (7.61) L零自旋= 1 2 我们还能在不破坏任何对称约束的情况下在这个拉格朗日量中添 加ϕ 的高阶项28。故我们写出下式，其中常数改作了惯用的记号 7.3 质量项、U(1) 和SU(2) 的统一 125 L零自旋+ 额外项= ∂µϕ†∂µϕ + ρ2ϕ†ϕ −λ(ϕ†ϕ)2。 (7.62) 从(7.41)已经得知如何在使拉格朗日量局域U(1) 不变的前提下， 在零自旋场和U(1) 规范场Bµ 间添加耦合项： L零自旋+ 额外项+ 自旋1 耦合= \u0012 (∂µ −i1 2gBµ)ϕ† \u0013\u0012 (∂µ + i1 2gBµ)ϕ \u0013\n\n+ ρ2ϕ†ϕ −λ(ϕ†ϕ)2 (7.63) 其具有对称性29 29 见(7.13)式，并注意整体乘在 拉格朗日量上的一个常数不会影 响物理。\n\nBµ →B′ µ = Bµ + ∂µa(x) (7.64)\n\nϕ(x) →ϕ′(x) = eia(x)ϕ(x)。 (7.65) 30Φ = \u0012ϕ1 ϕ2\n\n\u0013 用我们在上一节中对自旋1 2 场导出局域SU(2) 不变拉格朗日 31 这个理由很复杂，具体讨论不 会在本书中给出。",
+          "这两坨奇怪的东西看上去真该加在一起：拉格朗日量中的一个额 外项Aµ ¯ΨγµΨ 会变换作 Aµ ¯ΨγµΨ →(Aµ+∂µa(x))¯ΨγµΨ = Aµ ¯ΨγµΨ+∂µa(x)¯ΨγµΨ (7.14) 比较(7.12) 式中的第二项5。拉格朗日量中这个将Ψ、¯Ψ 和Aµ 耦 合在一起的新项，正好能干掉那个不自量力阻挡自旋1 2 自由场拥 有局域U(1) 不变性的家伙。换言之：通过添加这个新项使得拉格 朗日量局域U(1) 不变。\n\n再来仔细研究一下这件事。首先习惯上都会在局域U(1) 变换 的指数上添一个常数因子g：eiga(x)。这样额外项变成\n\n−(∂µa(x))¯ΨγµΨ →−g(∂µa(x))¯ΨγµΨ。 (7.15) 正如我们下面将看到的，这个额外的因子g 代表一个任意的耦合 常数13g。将这个新项 13 耦合常数总能告诉我们相互 作用的强度是多少。这里讨论的 是电磁相互作用，g 代表着它的 强度。",
+          "19 你完全可以使用更长的拉格 朗日量来包含更多的可能的项， 但事实上结果没有区别。\n\n3译者注：这句话太绕口了。直接看英文会好点：Now we have everything we need to construct a Lorentz-invariant Lagrangian that is in agreement with the restrictions discussed in Sec. 4.2 using Dirac spinors. 6.4 Proca 方程 105 6.4 Proca Equation Proca 方程 现在想找那些根据Lorentz 群的(1 2, 1 2) 表示变换的对象的运 动方程。前面已经看到这个表示是矢量表示，因此这件事就比较 简单了。考虑一个任意的矢量场Aµ，然后构造所有符合第4.2节约 束的Lorentz 不变的项。我们必须结合下标和上标，因为我们在 第2.4节定义的Minkowski 空间的标量积是这样的，而标量才是拉 格朗日量里面需要的。可能的不变量有20 20 由于可以分部积分，我们再一 次扔掉了∂µ∂µAνAν 这项，而 仅留着∂µAν∂µAν。",
+          "They can be created and destroyed. They are, in fact, mostly ephemeral and ﬂeeting. This experimentally veriﬁed fact was ﬁrst predicted by Dirac who understood how relativity implies the necessity of anti-particles. An extreme demonstration of particle creation is shown in the picture, which comes from the Relativistic Heavy Ion Collider (RHIC) at Brookhaven, Long Island. This machine crashes gold nuclei together, each containing 197 nucleons."
+        ]
+      ]
+    }
+  },
+  {
+    "step": "reranker.reranker_init",
+    "memory": {}
+  },
+  {
+    "step": "reranker.reranker_rerank",
+    "memory": {
+      "memory_rerank_psg": [
+        [
+          "技术上讲：我 们需要一个局域SU(2) 对称的 拉格朗日量来得到一个可重整的 理论。感兴趣的读者可以参阅本 节末给出的参考书目。\n\n量同样的办法，我们能对零自旋场的二重态30写出一个局域SU(2) 不变的拉格朗日量 LSU(2) 且U(1) 2gBµ)Φ† \u0013\u0012 (∂µ + ig′σi(W µ)i + i1 2gBµ)Φ \u0013\n\n= \u0012 (∂µ −ig′σi(Wµ)i −i1\n\n+ ρ2Φ†Φ −λ(Φ†Φ)2 | {z } ≡−V (Φ) (7.66) 图7.1: Higgs 势取不同 参数ρ 值的图像，ρ 被 其中Φ := \u0012ϕ1 ϕ2\n\n\u0013 ，对称变换为（(7.55)式） 认为是由于宇宙暴涨所 造成的宇宙冷却而改变。\n\nFigure adapted from (Wµ)i →(W ′ µ)i = (W ′ µ)i + ∂µbi(x) + ϵijkbj(x)(Wµ)k (7.67) “Spontaneous symmetry breaking” by FT2 和 (Wikimedia Commons) released under a CC",
+          "58) 17译注：原文下式多一乘号，已更正 124 Chapter 7. 相互作用理论 7.3 Mass Terms and Unification of U(1) and SU(2) 质量项、 U(1) 和SU(2) 的统一 在上一章中，为了防止SU(2) 对称性被破坏，我们不能往拉 格朗日量中添加形如m1 ¯ΨΨ 或m2(Wµ)i(W µ)i 的质量项。而从实 验中我们知道相应的粒子26却有质量，这常被解释为SU(2) 对称 26 例如，由Ψ 描述的电子e− 和电子中微子νe，以及由(Wµ)i 描述的三个bosons 。\n\n性的破缺。这意味着对称性在高能标下存在，而在低能标下自发 破缺。 之前我们得到了一个局域U(1) 不变的拉格朗日量，在这里为 方便起见我们将相应的自旋为1 的场记做Bµ： L局域U(1) 不变= −m ¯ψψ + ¯ψγµ(i∂µ +gBµ)ψ −1 4BµνBµν (7.59) 其中 Bµν := ∂µBν −∂νBµ 由于自旋为1 的场Bµ 能保证拉格朗日量的U(1) 不变性，所以其 常被称作U(1) 规范场。",
+          "这两坨奇怪的东西看上去真该加在一起：拉格朗日量中的一个额 外项Aµ ¯ΨγµΨ 会变换作 Aµ ¯ΨγµΨ →(Aµ+∂µa(x))¯ΨγµΨ = Aµ ¯ΨγµΨ+∂µa(x)¯ΨγµΨ (7.14) 比较(7.12) 式中的第二项5。拉格朗日量中这个将Ψ、¯Ψ 和Aµ 耦 合在一起的新项，正好能干掉那个不自量力阻挡自旋1 2 自由场拥 有局域U(1) 不变性的家伙。换言之：通过添加这个新项使得拉格 朗日量局域U(1) 不变。\n\n再来仔细研究一下这件事。首先习惯上都会在局域U(1) 变换 的指数上添一个常数因子g：eiga(x)。这样额外项变成\n\n−(∂µa(x))¯ΨγµΨ →−g(∂µa(x))¯ΨγµΨ。 (7.15) 正如我们下面将看到的，这个额外的因子g 代表一个任意的耦合 常数13g。将这个新项 13 耦合常数总能告诉我们相互 作用的强度是多少。这里讨论的 是电磁相互作用，g 代表着它的 强度。",
+          "+ g(Aµ + ∂µa(x))(e−iga(x) ¯Ψ)γµ(eiga(x)Ψ)\n\n= −m¯ΨΨ + i¯Ψγµ∂µΨ −(((((((( g(∂µa(x))¯ΨγµΨ\n\n+ gAµ ¯ΨγµΨ +(((((((( g(∂µa(x))¯ΨγµΨ\n\n= −m¯ΨΨ + i¯Ψγµ∂µΨ + gAµ ¯ΨγµΨ = LDirac+ 额外项。\n\n(7.16) 由此，在加上一个额外项后，我们得到了，正如所期待的，一 个局域U(1) 不变的拉格朗日量。为了描述一个包含了包含有质量 自旋1 2 场和无质量自旋为一的场的系统，我们必须将无质量自旋 为一的自由场的拉格朗日量也加到拉格朗日量中来。这样就得到 了完整的拉格朗日量 LDirac+ 额外项+Maxwell = −m¯ΨΨ+i¯Ψγµ∂µΨ+gAµ ¯ΨγµΨ+∂µAν∂µAν−∂µAν∂νAµ。\n\n(7.17) 为了方便起见，引入记号 Dµ ≡i∂µ + gAµ， (7.18) 称作协变导数(covariant derivative)6。",
+          "Physically one could argue that any real plate cannot reﬂect waves of arbitrarily high frequency: at some point, things begin to leak. Mathematically, we want to ﬁnd a way to neglect modes of momentum p ≫a−1 for some distance scale a ≪d, known as the ultra-violet (UV) cut-oﬀ. One way to do this is to change the integral (2.33) to, Z dpydpz\n\n∞ X r\u0010nπ\n\n!\n\nE(d) (2π)2 1 2\n\n\u00112 + p2 y + p2 z e−a q d ) 2+p2y+p2z (2."
+        ],
+        [
+          "+ g(Aµ + ∂µa(x))(e−iga(x) ¯Ψ)γµ(eiga(x)Ψ)\n\n= −m¯ΨΨ + i¯Ψγµ∂µΨ −(((((((( g(∂µa(x))¯ΨγµΨ\n\n+ gAµ ¯ΨγµΨ +(((((((( g(∂µa(x))¯ΨγµΨ\n\n= −m¯ΨΨ + i¯Ψγµ∂µΨ + gAµ ¯ΨγµΨ = LDirac+ 额外项。\n\n(7.16) 由此，在加上一个额外项后，我们得到了，正如所期待的，一 个局域U(1) 不变的拉格朗日量。为了描述一个包含了包含有质量 自旋1 2 场和无质量自旋为一的场的系统，我们必须将无质量自旋 为一的自由场的拉格朗日量也加到拉格朗日量中来。这样就得到 了完整的拉格朗日量 LDirac+ 额外项+Maxwell = −m¯ΨΨ+i¯Ψγµ∂µΨ+gAµ ¯ΨγµΨ+∂µAν∂µAν−∂µAν∂νAµ。\n\n(7.17) 为了方便起见，引入记号 Dµ ≡i∂µ + gAµ， (7.18) 称作协变导数(covariant derivative)6。",
+          "58) 17译注：原文下式多一乘号，已更正 124 Chapter 7. 相互作用理论 7.3 Mass Terms and Unification of U(1) and SU(2) 质量项、 U(1) 和SU(2) 的统一 在上一章中，为了防止SU(2) 对称性被破坏，我们不能往拉 格朗日量中添加形如m1 ¯ΨΨ 或m2(Wµ)i(W µ)i 的质量项。而从实 验中我们知道相应的粒子26却有质量，这常被解释为SU(2) 对称 26 例如，由Ψ 描述的电子e− 和电子中微子νe，以及由(Wµ)i 描述的三个bosons 。\n\n性的破缺。这意味着对称性在高能标下存在，而在低能标下自发 破缺。 之前我们得到了一个局域U(1) 不变的拉格朗日量，在这里为 方便起见我们将相应的自旋为1 的场记做Bµ： L局域U(1) 不变= −m ¯ψψ + ¯ψγµ(i∂µ +gBµ)ψ −1 4BµνBµν (7.59) 其中 Bµν := ∂µBν −∂νBµ 由于自旋为1 的场Bµ 能保证拉格朗日量的U(1) 不变性，所以其 常被称作U(1) 规范场。",
+          "技术上讲：我 们需要一个局域SU(2) 对称的 拉格朗日量来得到一个可重整的 理论。感兴趣的读者可以参阅本 节末给出的参考书目。\n\n量同样的办法，我们能对零自旋场的二重态30写出一个局域SU(2) 不变的拉格朗日量 LSU(2) 且U(1) 2gBµ)Φ† \u0013\u0012 (∂µ + ig′σi(W µ)i + i1 2gBµ)Φ \u0013\n\n= \u0012 (∂µ −ig′σi(Wµ)i −i1\n\n+ ρ2Φ†Φ −λ(Φ†Φ)2 | {z } ≡−V (Φ) (7.66) 图7.1: Higgs 势取不同 参数ρ 值的图像，ρ 被 其中Φ := \u0012ϕ1 ϕ2\n\n\u0013 ，对称变换为（(7.55)式） 认为是由于宇宙暴涨所 造成的宇宙冷却而改变。\n\nFigure adapted from (Wµ)i →(W ′ µ)i = (W ′ µ)i + ∂µbi(x) + ϵijkbj(x)(Wµ)k (7.67) “Spontaneous symmetry breaking” by FT2 和 (Wikimedia Commons) released under a CC",
+          "Physically one could argue that any real plate cannot reﬂect waves of arbitrarily high frequency: at some point, things begin to leak. Mathematically, we want to ﬁnd a way to neglect modes of momentum p ≫a−1 for some distance scale a ≪d, known as the ultra-violet (UV) cut-oﬀ. One way to do this is to change the integral (2.33) to, Z dpydpz\n\n∞ X r\u0010nπ\n\n!\n\nE(d) (2π)2 1 2\n\n\u00112 + p2 y + p2 z e−a q d ) 2+p2y+p2z (2.",
+          "这两坨奇怪的东西看上去真该加在一起：拉格朗日量中的一个额 外项Aµ ¯ΨγµΨ 会变换作 Aµ ¯ΨγµΨ →(Aµ+∂µa(x))¯ΨγµΨ = Aµ ¯ΨγµΨ+∂µa(x)¯ΨγµΨ (7.14) 比较(7.12) 式中的第二项5。拉格朗日量中这个将Ψ、¯Ψ 和Aµ 耦 合在一起的新项，正好能干掉那个不自量力阻挡自旋1 2 自由场拥 有局域U(1) 不变性的家伙。换言之：通过添加这个新项使得拉格 朗日量局域U(1) 不变。\n\n再来仔细研究一下这件事。首先习惯上都会在局域U(1) 变换 的指数上添一个常数因子g：eiga(x)。这样额外项变成\n\n−(∂µa(x))¯ΨγµΨ →−g(∂µa(x))¯ΨγµΨ。 (7.15) 正如我们下面将看到的，这个额外的因子g 代表一个任意的耦合 常数13g。将这个新项 13 耦合常数总能告诉我们相互 作用的强度是多少。这里讨论的 是电磁相互作用，g 代表着它的 强度。"
+        ],
+        [
+          "19 你完全可以使用更长的拉格 朗日量来包含更多的可能的项， 但事实上结果没有区别。\n\n3译者注：这句话太绕口了。直接看英文会好点：Now we have everything we need to construct a Lorentz-invariant Lagrangian that is in agreement with the restrictions discussed in Sec. 4.2 using Dirac spinors. 6.4 Proca 方程 105 6.4 Proca Equation Proca 方程 现在想找那些根据Lorentz 群的(1 2, 1 2) 表示变换的对象的运 动方程。前面已经看到这个表示是矢量表示，因此这件事就比较 简单了。考虑一个任意的矢量场Aµ，然后构造所有符合第4.2节约 束的Lorentz 不变的项。我们必须结合下标和上标，因为我们在 第2.4节定义的Minkowski 空间的标量积是这样的，而标量才是拉 格朗日量里面需要的。可能的不变量有20 20 由于可以分部积分，我们再一 次扔掉了∂µ∂µAνAν 这项，而 仅留着∂µAν∂µAν。",
+          "40)式给出\n\n\u0010 ∂µϕ†∂µϕ −m2ϕ†ϕ \u0011 。 (7.61) L零自旋= 1 2 我们还能在不破坏任何对称约束的情况下在这个拉格朗日量中添 加ϕ 的高阶项28。故我们写出下式，其中常数改作了惯用的记号 7.3 质量项、U(1) 和SU(2) 的统一 125 L零自旋+ 额外项= ∂µϕ†∂µϕ + ρ2ϕ†ϕ −λ(ϕ†ϕ)2。 (7.62) 从(7.41)已经得知如何在使拉格朗日量局域U(1) 不变的前提下， 在零自旋场和U(1) 规范场Bµ 间添加耦合项： L零自旋+ 额外项+ 自旋1 耦合= \u0012 (∂µ −i1 2gBµ)ϕ† \u0013\u0012 (∂µ + i1 2gBµ)ϕ \u0013\n\n+ ρ2ϕ†ϕ −λ(ϕ†ϕ)2 (7.63) 其具有对称性29 29 见(7.13)式，并注意整体乘在 拉格朗日量上的一个常数不会影 响物理。\n\nBµ →B′ µ = Bµ + ∂µa(x) (7.64)\n\nϕ(x) →ϕ′(x) = eia(x)ϕ(x)。 (7.65) 30Φ = \u0012ϕ1 ϕ2\n\n\u0013 用我们在上一节中对自旋1 2 场导出局域SU(2) 不变拉格朗日 31 这个理由很复杂，具体讨论不 会在本书中给出。",
+          "这两坨奇怪的东西看上去真该加在一起：拉格朗日量中的一个额 外项Aµ ¯ΨγµΨ 会变换作 Aµ ¯ΨγµΨ →(Aµ+∂µa(x))¯ΨγµΨ = Aµ ¯ΨγµΨ+∂µa(x)¯ΨγµΨ (7.14) 比较(7.12) 式中的第二项5。拉格朗日量中这个将Ψ、¯Ψ 和Aµ 耦 合在一起的新项，正好能干掉那个不自量力阻挡自旋1 2 自由场拥 有局域U(1) 不变性的家伙。换言之：通过添加这个新项使得拉格 朗日量局域U(1) 不变。\n\n再来仔细研究一下这件事。首先习惯上都会在局域U(1) 变换 的指数上添一个常数因子g：eiga(x)。这样额外项变成\n\n−(∂µa(x))¯ΨγµΨ →−g(∂µa(x))¯ΨγµΨ。 (7.15) 正如我们下面将看到的，这个额外的因子g 代表一个任意的耦合 常数13g。将这个新项 13 耦合常数总能告诉我们相互 作用的强度是多少。这里讨论的 是电磁相互作用，g 代表着它的 强度。",
+          "They can be created and destroyed. They are, in fact, mostly ephemeral and ﬂeeting. This experimentally veriﬁed fact was ﬁrst predicted by Dirac who understood how relativity implies the necessity of anti-particles. An extreme demonstration of particle creation is shown in the picture, which comes from the Relativistic Heavy Ion Collider (RHIC) at Brookhaven, Long Island. This machine crashes gold nuclei together, each containing 197 nucleons.",
+          "技术上讲：我 们需要一个局域SU(2) 对称的 拉格朗日量来得到一个可重整的 理论。感兴趣的读者可以参阅本 节末给出的参考书目。\n\n量同样的办法，我们能对零自旋场的二重态30写出一个局域SU(2) 不变的拉格朗日量 LSU(2) 且U(1) 2gBµ)Φ† \u0013\u0012 (∂µ + ig′σi(W µ)i + i1 2gBµ)Φ \u0013\n\n= \u0012 (∂µ −ig′σi(Wµ)i −i1\n\n+ ρ2Φ†Φ −λ(Φ†Φ)2 | {z } ≡−V (Φ) (7.66) 图7.1: Higgs 势取不同 参数ρ 值的图像，ρ 被 其中Φ := \u0012ϕ1 ϕ2\n\n\u0013 ，对称变换为（(7.55)式） 认为是由于宇宙暴涨所 造成的宇宙冷却而改变。\n\nFigure adapted from (Wµ)i →(W ′ µ)i = (W ′ µ)i + ∂µbi(x) + ϵijkbj(x)(Wµ)k (7.67) “Spontaneous symmetry breaking” by FT2 和 (Wikimedia Commons) released under a CC"
+        ]
+      ]
+    }
+  },
+  {
+    "step": "prompt.qa_rag_boxed",
+    "memory": {
+      "memory_prompt_ls": [
+        "Please answer the following question.\nThink step by step.\nProvide your final answer in the format \\boxed{YOUR_ANSWER}.\n\nQuestion: 什么是 UltraRAG？",
+        "Please answer the following question.\nThink step by step.\nProvide your final answer in the format \\boxed{YOUR_ANSWER}.\n\nQuestion: UltraRAG 支持哪些功能？",
+        "Please answer the following question.\nThink step by step.\nProvide your final answer in the format \\boxed{YOUR_ANSWER}.\n\nQuestion: 如何使用 UltraRAG 构建知识库？"
+      ]
+    }
+  },
+  {
+    "step": "generation.generation_init",
+    "memory": {}
+  },
+  {
+    "step": "generation.generate",
+    "memory": {
+      "memory_ans_ls": [
+        "UltraRAG是一种高效的单链抗体（Single-Chain Antibody，scFv）技术，用于生成抗体的变异性单链分子。这种技术通过合成和克隆抗体变异性单链分子来实现，具有高效、灵敏和特异性。UltraRAG技术通常用于生物医学研究、分子诊断和生物制药应用。\n\n因此，最终答案是：\n\n\\boxed{UltraRAG是一种高效的单链抗体技术}",
+        "UltraRAG是一种基于GPU的算法工具，主要用于高效的短 reads序列 Alignment（如RNA-seq、DNA-seq等）。UltraRAG支持以下功能：\n\n\\boxed{以下功能：}\n\n1. 高效的短 reads序列 Alignment：UltraRAG能够快速高效地对短 reads序列进行 Alignment，尤其适用于RNA-seq和DNA-seq等应用。\n2. 支持多种序列 Alignment 算法：UltraRAG支持多种序列 Alignment 算法，包括Bowtie2、BWA、STAR等。\n3. 高效的GPU加速：UltraRAG利用GPU加速，能够显著提高 Alignment 的效率。\n4. 支持多种序列输入格式：UltraRAG支持多种序列输入格式，包括 FASTQ、FASTA、SAM等。\n5. 支持多种输出格式：UltraRAG支持多种输出格式，包括 SAM、BAM、VCF等。",
+        "回答：\n\n使用 UltraRAG 构建知识库的步骤如下：\n\n1. **初始化 UltraRAG 实例**：首先，需要初始化一个 UltraRAG 实例，例如：`rag = UltraRAG()`\n2. **定义知识库结构**：定义知识库的结构，例如：`rag.define_graph()`\n3. **添加知识库元素**：添加知识库元素，例如：`rag.add_node(\"node1\")`、`rag.add_edge(\"edge1\")`\n4. **训练模型**：训练 UltraRAG 模型，例如：`rag.train()`\n5. **保存模型**：保存 trained 模型，例如：`rag.save_model()`\n6. **载入模型**：载入保存的模型，例如：`rag.load_model()`\n\n最终答案：\n\\boxed{rag = UltraRAG(); rag.define_graph(); rag.add_node(\"node1\"); rag.add_edge(\"edge1\"); rag.train(); rag.save_model(); rag.load_model()}"
+      ]
+    }
+  },
+  {
+    "step": "custom.output_extract_from_boxed",
+    "memory": {
+      "memory_pred_ls": [
+        "UltraRAG是一种高效的单链抗体技术",
+        "以下功能：",
+        "rag = UltraRAG(); rag.define_graph(); rag.add_node(\"node1\"); rag.add_edge(\"edge1\"); rag.train(); rag.save_model(); rag.load_model"
+      ]
+    }
+  }
+]
